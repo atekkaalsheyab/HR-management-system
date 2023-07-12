@@ -29,21 +29,99 @@
             <!-- <button>Learn More</button> -->
         </div>
 
-        <h2>Employee info</h2>
-        <table class="table-fill">
+        <div class="formbold-main-wrapper">
+
+            <div class="formbold-form-wrapper">
+                <form id="empForm">
+                    <div class="formbold-form-title">
+                        <h2 class="">Employee info</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt.
+                        </p>
+                    </div>
+
+                    <div class="formbold-input-flex">
+                        <div>
+                            <label for="firstname" class="formbold-form-label">
+                                First name
+                            </label>
+                            <input type="text" name="firstname" id="firstname" class="formbold-form-input" />
+                        </div>
+                        <div>
+                            <label for="lastname" class="formbold-form-label"> Last name </label>
+                            <input type="text" name="lastname" id="lastname" class="formbold-form-input" />
+                        </div>
+                    </div>
+                    <!--
+                    <div class="formbold-input-flex">
+                        <div>
+                            <label for="email" class="formbold-form-label"> Email </label>
+                            <input type="email" name="email" id="email" class="formbold-form-input" />
+                        </div>
+                        <div>
+                            <label for="phone" class="formbold-form-label"> Phone number </label>
+                            <input type="text" name="phone" id="phone" class="formbold-form-input" />
+                        </div>
+                    </div>
+-->
+                    <div class="formbold-mb-3">
+                        <label for="address" class="formbold-form-label">
+                            Department
+                        </label>
+                        <select id="address" class="formbold-form-input">
+                            <option value="Administration">Administration</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Development">Development</option>
+                            <option value="Finance">Finance</option>
+                        </select>
+                        <!--<input type="text" name="address" id="address" class="formbold-form-input" /> -->
+                    </div>
+
+                    <div class="formbold-mb-3">
+                        <label for="address2" class="formbold-form-label">
+                            Level
+                        </label>
+                        <select id="address2" class="formbold-form-input">
+                            <option value="Junior">Junior</option>
+                            <option value="Mid-Senior">Mid-Senior</option>
+                            <option value="Senior">Senior</option>
+                        </select>
+                        <!-- <input type="text" name="address2" id="address2" class="formbold-form-input" /> -->
+                    </div>
+
+                    <div class="formbold-input-flex">
+                        <div>
+                            <label for="state" class="formbold-form-label"> Image URL </label>
+                            <input type="text" name="img_url" id="img_url" class="formbold-form-input" />
+                        </div>
+
+                    </div>
+
+
+
+                    <input type="submit" class="formbold-btn" value="Register Now" />
+                </form>
+            </div>
+        </div>
+
+        <section id="articles" class="articles" style="margin-bottom: 40px;">
+           
+          </section>
+        <table class="table-fill" style="margin-bottom: 40px;">
             <thead>
                 <tr>
-                   <!-- <th class="text-left">ID</th> -->
-                    <th class="text-left">Name</th> 
-                   <!-- <th class="text-left">Department</th> -->
-                   <!-- <th class="text-left">Level</th> -->
+                    <!-- <th class="text-left">ID</th> -->
+                    <th class="text-left">Name</th>
+                    <!-- <th class="text-left">Department</th> -->
+                    <!-- <th class="text-left">Level</th> -->
                     <!-- <th class="text-left">Image URL</th> -->
                     <th class="text-left">Salary</th>
 
                 </tr>
             </thead>
-            <tbody class="table-hover">
-                <tr>
+            <tbody class="table-hover" id="btable">
+                <!--  <tr>
                     <td class="text-left">January</td>
                     <td class="text-left">$ 50,000.00</td>
                 </tr>
@@ -63,6 +141,7 @@
                     <td class="text-left">May</td>
                     <td class="text-left">$ 98,000.00</td>
                 </tr>
+                -->
             </tbody>
         </table>
 
@@ -92,7 +171,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
     <script src="class-07.js"></script>
 </body>
 
